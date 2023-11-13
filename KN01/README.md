@@ -3,8 +3,8 @@
 1. Überprüfen Sie zuerst wie viel Logische Prozessoren und RAM Ihr Host-System hat, also ihr
 eigentliches Betriebssystem
 
-### CPU Prozessore
-![Anzahl CPU prozessore](/KN01/Content/KN01%20-%20Anzahl%20Logischeprozessor.png)
+### CPU Prozessoren
+![Anzahl CPU Prozessoren](/KN01/Content/KN01%20-%20Anzahl%20Logischeprozessor.png)
 ### RAM Speicher
 ![Anzahl RAM speicher](Content/KN01%20-%20RAM%20Speicher.png)
 
