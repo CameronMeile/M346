@@ -30,6 +30,12 @@ Auslesen ist free -g .
 
 ## Fazit
 
+### CPU
 In der Gesamtzahl aller VM's kann die Anzahl der virtuellen CPU Kerne die der realen übersteigen ("Überbuchung") - das bedeutet, dass sich mehrere VM's die gleichen Kerne teilen. Eine einzelne VM kann hingegen nicht mehr Kerne haben als der reale Host, da physische Hardware ja tatsächlich Aufgrund der Angabe zugeteilt wird. Nicht existente Kerne können logischerweise nicht zugeteilt werden.
 
-Daselbe gilt bei RAM
+### RAM
+Man kann mehr RAM
+
+Die maximale Arbeitsspeichergröße einer virtuellen Maschine hängt vom physischen Arbeitsspeicher des Hosts und der Kompatibilitätseinstellung der virtuellen Maschine ab.
+
+Wenn der Arbeitsspeicher der virtuellen Maschine größer als der Hostarbeitsspeicher ist, wird eine Auslagerung durchgeführt, die sich sehr stark auf die Leistung der virtuellen Maschine auswirken kann. 
