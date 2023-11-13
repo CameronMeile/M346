@@ -9,7 +9,7 @@ eigentliches Betriebssystem
 2. Weisen Sie nun Ihrer VM, die Sie unter B) erstellt haben weniger Prozessoren zu, als Ihr HostSystem logische Prozessoren hat. Starten Sie die VM und rufen Sie in der Console den Befehl 
 lscpu | grep "CPU(s)" auf. (Screenshot für Abgabe nicht vergessen)
 
-
+![KN01 - CPU grep command](/KN01/Content/KN01%20-%20CPU%20grep.png)
 
 
 3. Weisen Sie nun Ihrer VM, die Sie unter B erstellt haben mehr Prozessoren zu, als Ihr HostSystem logische Prozessoren hat. Starten Sie die VM und rufen Sie in der Console den Befehl 
