@@ -1,4 +1,4 @@
-#KN01 Virtualisierung
+# KN01 Virtualisierung
 
 1. Überprüfen Sie zuerst wie viel Logische Prozessoren und RAM Ihr Host-System hat, also ihr
 eigentliches Betriebssystem
