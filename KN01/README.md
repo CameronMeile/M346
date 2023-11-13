@@ -27,3 +27,9 @@ Auslesen ist free -g .
 ![Versuch VM mehr RAM zu geben](/KN01/Content/KN01%20-%20Mehr%20RAM.png)
 
 ![Versuch Fehlgeschlagen](/KN01/Content/KN01%20-%20Mehr%20RAM%20Fehlgeschlagen.png)
+
+## Fazit
+
+In der Gesamtzahl aller VM's kann die Anzahl der virtuellen CPU Kerne die der realen übersteigen ("Überbuchung") - das bedeutet, dass sich mehrere VM's die gleichen Kerne teilen. Eine einzelne VM kann hingegen nicht mehr Kerne haben als der reale Host, da physische Hardware ja tatsächlich Aufgrund der Angabe zugeteilt wird. Nicht existente Kerne können logischerweise nicht zugeteilt werden.
+
+Daselbe gilt bei RAM
