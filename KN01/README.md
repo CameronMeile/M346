@@ -17,9 +17,13 @@ lscpu | grep "CPU(s)" auf. (Screenshot für Abgabe nicht vergessen)
 3. Weisen Sie nun Ihrer VM, die Sie unter B erstellt haben mehr Prozessoren zu, als Ihr HostSystem logische Prozessoren hat. Starten Sie die VM und rufen Sie in der Console den Befehl 
 lscpu | grep "CPU(s)" auf. (Screenshot für Abgabe nicht vergessen)
 
-![Veruusch VM mehr Prozessoren zu geben](/KN01/Content/KN01%20-%20Mehr%20Prozessor.png)
+![Verusch VM mehr Prozessoren zu geben](/KN01/Content/KN01%20-%20Mehr%20Prozessor.png)
 
 ![Versuch Fehlgeschlagen](/KN01/Content/KN01%20-%208Prozzesor%20versuch.png)
 
 4. Machen Sie die gleichen Schritte wie eben mit der Ressource RAM. Der Linux Befehl zum
-Auslesen ist free -g . 
+Auslesen ist free -g .
+
+![Versuch VM mehr RAM zu geben](/KN01/Content/KN01%20-%20Mehr%20RAM.png)
+
+![Versuch Fehlgeschlagen](/KN01/Content/KN01%20-%20Mehr%20RAM%20Fehlgeschlagen.png)
