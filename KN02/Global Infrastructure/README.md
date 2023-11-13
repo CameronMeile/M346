@@ -45,3 +45,19 @@ The business benefits of cloud computing include the following:
 | Infrastructure as a service (IaaS) | Compute power, networking, and storage provided over the internet | Amazon Elastic Compute Cloud (Amazon EC2), Rackspace, Google Compute Engine |
 | Platform as a service (PaaS) | Tools provided over the internet for making programs and applications | AWS Elastic Beanstalk, Microsoft Azure, Google App Engine |
 | Software as a service (SaaS) | Applications and programs that are accessed and provided over the internet | Dropbox, Slack, Spotify, YouTube, Microsoft Office 365, Gmail |
+
+### How did AWS get started?
+
+- Origins began in 2002 when Amazon started the Amazon.com web service.
+Offered tools for developers to work on the Amazon product catalog
+- In 2003, Amazon realized that its infrastructure services could give them an advantage over the competition.
+Provided hardware power, storage, and databases along with the software tools to control them
+- In 2004, Amazon publicly announced that it was working on a cloud service.
+- In 2006, Amazon launched AWS with just a few of the services that are still around today.
+  - Amazon Simple Storage Service (Amazon S3)
+  - Amazon EC2 
+  - Amazon Simple Queue Service (Amazon SQS)
+- By 2009, AWS added more services
+  - Amazon Elastic Block Store (Amazon EBS)
+  - Amazon CloudFront – a content delivery network (CDN)
+- AWS has developed partnerships with several large companies. AWS has been growing and adding new services and tools ever since.
