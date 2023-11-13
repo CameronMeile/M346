@@ -43,7 +43,5 @@ The business benefits of cloud computing include the following:
 | Type of Cloud Service | What It Does | Examples |
 | :---: | :---: | :---: | 
 | Infrastructure as a service (IaaS) | Compute power, networking, and storage provided over the internet | Amazon Elastic Compute Cloud (Amazon EC2), Rackspace, Google Compute Engine |
-| :---: | :---: | :---: | 
 | Platform as a service (PaaS) | Tools provided over the internet for making programs and applications | AWS Elastic Beanstalk, Microsoft Azure, Google App Engine |
-| :---: | :---: | :---: | 
 | Software as a service (SaaS) | Applications and programs that are accessed and provided over the internet | Dropbox, Slack, Spotify, YouTube, Microsoft Office 365, Gmail |
