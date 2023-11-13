@@ -26,7 +26,7 @@ Auslesen ist free -g .
 
 ![Versuch VM mehr RAM zu geben](/KN01/Content/KN01%20-%20Mehr%20RAM.png)
 
-![Versuch Fehlgeschlagen](/KN01/Content/KN01%20-%20Mehr%20RAM%20Fehlgeschlagen.png)
+![Versuch Erfolg](/KN01/Content/KN01%20-%20Mehr%20RAM%20Fehlgeschlagen.png)
 
 ## Fazit
 
