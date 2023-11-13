@@ -3,7 +3,10 @@
 1. Überprüfen Sie zuerst wie viel Logische Prozessoren und RAM Ihr Host-System hat, also ihr
 eigentliches Betriebssystem
 
-
+### CPU Prozessore
+![Anzahl CPU prozessore](/KN01/Content/KN01%20-%20Anzahl%20Logischeprozessor.png)
+### RAM Speicher
+![Anzahl RAM speicher](Content/KN01%20-%20RAM%20Speicher.png)
 
 
 2. Weisen Sie nun Ihrer VM, die Sie unter B) erstellt haben weniger Prozessoren zu, als Ihr HostSystem logische Prozessoren hat. Starten Sie die VM und rufen Sie in der Console den Befehl 
