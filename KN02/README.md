@@ -13,3 +13,11 @@
 ![](/KN02/Content/Teil%20a/Teil2.png)
 ![](/KN02/Content/Teil%20a/Details.png)
 ![](/KN02/Content/Teil%20a/LAbHMLT.png)
+
+### Teil b
+![](/KN02/Content/Teil%20b/BucketsList.png)
+![](/KN02/Content/Teil%20b/BucketDataList.png)
+![](/KN02/Content/Teil%20b/EigenschaftenBucket.png)
+![](/KN02/Content/Teil%20b/PolicyJson.png)
+![](/KN02/Content/Teil%20b/Html.png)
+
