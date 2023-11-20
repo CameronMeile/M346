@@ -1,5 +1,6 @@
 # KN03: Cloud-init und AWS
 
+## Cloud-init Datei Verstehen
 ```
 #cloud-config
 
@@ -21,3 +22,6 @@ packages:  # Liste der zu installierenden Pakete
   - curl
   - wget
 ```
+
+## SSH-Key und Cloud-init
+
