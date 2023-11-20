@@ -21,3 +21,12 @@
 ![](/KN02/Content/Teil%20b/PolicyJson.png)
 ![](/KN02/Content/Teil%20b/Html.png)
 
+## TASK B
+![](/KN02/Content/Task%20B/SHHKeyList.png)
+![](/KN02/Content/Task%20B/SSH1.png)
+![](/KN02/Content/Task%20B/SSH2.png)
+
+## TASK C
+![](/KN02/Content/Task%20C/Index.png)
+![](/KN02/Content/Task%20C/DBPHP.png)
+![](/KN02/Content/Task%20C/InfoPHP.png)
