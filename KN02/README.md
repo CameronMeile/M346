@@ -4,3 +4,12 @@
 - [Modul 2 - ...]()
 - [Modul 3 - ...]()
 - [Modul 4 - ...]()
+
+
+## TASK A
+
+### Teil a
+![](/KN02/Content/Teil%20a/Teil1.png)
+![](/KN02/Content/Teil%20a/Teil2.png)
+![](/KN02/Content/Teil%20a/Details.png)
+![](/KN02/Content/Teil%20a/LAbHMLT.png)
