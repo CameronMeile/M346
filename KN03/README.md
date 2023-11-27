@@ -24,4 +24,18 @@ packages:  # Liste der zu installierenden Pakete
 ```
 
 ## SSH-Key und Cloud-init
+![](/KN03/Content/TASK%20B/ListOfRightSSH.png)
+### Login with 2-pem key - Denied
+![](/KN03/Content/TASK%20B/PEM-Key2.png)
+### Login with 1-pem key - Sucess
+![](/KN03/Content/TASK%20B/PEM-Key1.png)
+### Log of Instance
+![](/KN03/Content/TASK%20B/Log.png)
 
+
+## Template
+'''
+ssh -i "Cameron-1.pem" ubuntu@107.20.93.224
+'''
+
+## Auftrennung von Web- und Datenbankserver
