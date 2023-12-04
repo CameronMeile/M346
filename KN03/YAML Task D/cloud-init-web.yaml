@@ -1,48 +1,63 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: apache-service
-spec:
-  selector:
-    app: apache
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
+#cloud-config
+users:
+  - name: ubuntu # Benutzername
+    sudo: ALL=(ALL) NOPASSWD:ALL # sudo-Regeln für diesen Benutzer
+    groups: users, admin # Zugehörigkeit zu Benutzergruppen
+    home: /home/ubuntu # Verzeichnis des Benutzers
+    shell: /bin/bash # Standard-Shell für den Benutzer
+    ssh_authorized_keys: # SSH-Schlüssel für den Benutzer
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoNJnd3k8lkPVz7Ay95fOqN7R6+JBICvPPPHhlHYrgUsVvxpsYj5+FQZ+co63jts6/69FpZvmIQRB7cZXUyhyGJd4yptKAEbLosECl6nGslMypXeh5rex/VSmL89r3C7tL0aKWoAvCSBckrSiRjIRCPSYED8EPhIZMs1Ie5eMKgs+d19WtflTlkr6wzBW7gdxcKSL25JmByCrLJyBMcFnF0P/gcIZ74jdwyCdSFRB97u4GnofuM6KAdOAp5QuMLcu2VbbiRkZaRRps/dfIeLXWQHIvWsQNhol3AkH17ybcdEucJu+Gl5AMra/S43kqgPnepmAmTdipkUGeamIApI9b aws-key
+ssh_pwauth: false # SSH-Passwort-Authentifizierung deaktivieren
+disable_root: false # Root-Benutzer deaktivieren
+package_update: true # Paketaktualisierung durchführen
 
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: apache-deployment
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: apache
-  template:
-    metadata:
-      labels:
-        app: apache
-    spec:
-      containers:
-        - name: apache
-          image: httpd:2.4
-          ports:
-            - containerPort: 80
-          env:
-            - name: MYSQL_HOST
-              value: mysql-service
-            - name: MYSQL_USER
-              value: myuser
-            - name: MYSQL_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: db-secret
-                  key: POSTGRES_PASSWORD
-          volumeMounts:
-            - name: html-volume
-              mountPath: /usr/local/apache2/htdocs
-      volumes:
-        - name: html-volume
-          emptyDir: {}
+# Pakete/Software aktualisieren
+# Apache Webserver installieren
+packages:
+  - curl 
+  - wget 
+  - apache2
+  - php
+  - libapache2-mod-php
+  - adminer
+  - php-mysqli
+
+# Webserver neu starten
+# In das Home-Verzeichnis wechseln
+# Repository klonen
+# PHP-Dateien in das Verzeichnis des Webservers kopieren
+runcmd:
+  - sudo a2enconf adminer
+  - sudo systemctl restart apache2
+
+# Datei für PHP-Dateien erstellen
+write_files:
+  - path: /var/www/html/db.php
+    content: |
+      <?php
+        $servername = "54.81.105.135";
+        $username = "admin";
+        $password = "password";
+        $dbname = "mysql";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "select Host, User from mysql.user;";
+        $result = $conn->query($sql);
+        while($row = $result->fetch_assoc()){
+                echo($row["Host"] . " / " . $row["User"] . "<br />");
+        }
+        //var_dump($result);
+      ?>
+  - path: /var/www/html/info.php
+    content: |
+      <?php
+  
+      phpinfo();
+  
+      ?>

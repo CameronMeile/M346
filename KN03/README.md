@@ -39,3 +39,13 @@ ssh -i "Cameron-1.pem" ubuntu@107.20.93.224
 '''
 
 ## Auftrennung von Web- und Datenbankserver
+
+![](/KN03/Content/TASK%20D/MySQL-DB.png)
+
+![](/KN03/Content/TASK%20D/TELNET-DB.png)
+
+![](/KN03/Content/TASK%20D/Index.png)
+![](/KN03/Content/TASK%20D/infophp.png)
+![](/KN03/Content/TASK%20D/dbphp.png)
+![](/KN03/Content/TASK%20D/ADMIER-DB.png)
+
