@@ -40,6 +40,9 @@ ssh -i "Cameron-1.pem" ubuntu@107.20.93.224
 
 ## Auftrennung von Web- und Datenbankserver
 
+- [Cloud-init-db.yaml](/KN03/YAML%20Task%20D/cloud-init-db.yaml)
+- [Cloud-init-web.yaml](/KN03/YAML%20Task%20D/cloud-init-web.yaml)
+
 ![](/KN03/Content/TASK%20D/MySQL-DB.png)
 
 ![](/KN03/Content/TASK%20D/TELNET-DB.png)
