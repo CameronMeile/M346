@@ -1,0 +1,1 @@
+# KN04 - Cloud-init / Storage
