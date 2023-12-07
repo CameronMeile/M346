@@ -1,5 +1,8 @@
 # M346 Cloudlösungen konzipieren und realisieren
 
+## Overview
+![Overview - KN00 - KN01](/Content/overview.png)
+
 ## INDEX
 
 - [KN00 - All Taskfiles](/KN00/)
