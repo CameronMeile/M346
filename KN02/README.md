@@ -40,12 +40,12 @@ SSH-Key mit cloud-init Konfiguration.
 ![SSH Command 2 with pem2 - Denied](/KN02/Content/Task%20B/SSH2.png)
 
 Der private Schlüssel liegt grundsätzlich im Verzeichnis mit dem Namen .ssh in Ihrem Home-Verzeichnis. Dies sowohl unter Windows als auch MacOS.
-'''
+```
 # Schlüsselpaar erstellen
 ssh-keygen -f C:\Users\<IhrBenutzer>\.ssh\<Keyname>.pem -t rsa -b 2048 -C max
 # z.B.
 # ssh-keygen -f C:\Users\maxmuster\.ssh\max.pem -t rsa -b 2048 -C max
-'''
+```
 Dieser Befehl erstellt sowohl den privaten als auch den öffentlichen Schlüssel. Parameter:
 
 -t: Verwendeter Algorithmus
@@ -53,11 +53,11 @@ Dieser Befehl erstellt sowohl den privaten als auch den öffentlichen Schlüssel
 -C: Name des Schlüssels. Wird beim öffentlichen Schlüssel angehängt.
 
 Falls Sie bereits einen privaten Schlüssel haben, können Sie davon auch den öffentlichen Schlüssel exportieren.
-'''
+```
 ssh-keygen -y -f C:\Users\<IhrBenutzer>\.ssh\<keyname>.pem > C:\Users\<IhrBenutzer>\.ssh\<keyname>.pub
 # z.B. 
 # ssh-keygen -y -f C:\Users\Marco\.ssh\marco1.pem > C:\Users\Marco\.ssh\marco1.pub
-'''
+```
 
 ## TASK C - Installation von Web- und Datenbankserver
 ![WEB INFO](/KN02/Content/Task%20C/Index.png)
