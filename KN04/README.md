@@ -4,6 +4,8 @@ In dieser Kompetenz werden Sie eine eigene PHP-Dateien erstellen und mit Cloud-I
 zu den bestehenden. Sie werden Bilder mit S3 hosten und in PHP einbinden. Dabei arbeiten Sie
 mit den Speichermodellen. 
 
+---
+
 ## TASK A - Bild erstellen und auf S3 hosten
 
 

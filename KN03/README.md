@@ -1,4 +1,8 @@
 # KN03: Cloud-init und AWS
+In dieser Kompetenz werden wir mit der Automatisierung der Installation arbeiten. Sie werden
+Cloud-init verwenden um Server zu installieren. 
+
+---
 
 ## Cloud-init Datei Verstehen
 ```
