@@ -9,6 +9,8 @@ Sie erlernen den grundsätzlichen Umgang mit AWS. Anschliessend werden Sie lerne
 mit einem SSH Key einloggt, gefolgt vom Verständnis für Cloud-init. Am Schluss vermischen Sie
 SSH-Key mit cloud-init Konfiguration.
 
+[Aufgaben Stellung - KN02.pdf](/KN00/Content/KN02.pdf)
+
 ---
 
 - [Modul 1 - Global Infrastructure](/KN02/Global%20Infrastructure/README.md)

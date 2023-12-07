@@ -2,6 +2,8 @@
 In dieser Kompetenz arbeiten Sie mit einer lokalen Virtualisierungsumgebung. Sie sollen ein
 Gefühl für den Umgang mit Virtualisierung und Installation von Linux kriegen. 
 
+[Aufgaben Stellung - KN01.pdf](/KN00/Content/KN01.pdf)
+
 ---
 
 1. Überprüfen Sie zuerst wie viel Logische Prozessoren und RAM Ihr Host-System hat, also ihr

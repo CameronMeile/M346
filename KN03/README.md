@@ -2,6 +2,8 @@
 In dieser Kompetenz werden wir mit der Automatisierung der Installation arbeiten. Sie werden
 Cloud-init verwenden um Server zu installieren. 
 
+[Aufgaben Stellung - KN03.pdf](/KN00/Content/KN03.pdf)
+
 ---
 
 ## Cloud-init Datei Verstehen
