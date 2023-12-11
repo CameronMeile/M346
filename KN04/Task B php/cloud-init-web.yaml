@@ -22,15 +22,7 @@ packages:  # Liste der zu installierenden Pakete
   - apache2
   - php
   - libapache2-mod-php
-
-# Webserver neu starten
-# In das Home-Verzeichnis wechseln
-# Repository klonen
-# PHP-Dateien in das Verzeichnis des Webservers kopieren
-runcmd:
-  - sudo a2enconf adminer
-  - sudo systemctl restart apache2
-
+  
 # Datei für PHP-Dateien erstellen
 write_files:
   - path: /var/www/html/db.php
