@@ -12,10 +12,10 @@ in die Theorie "Migrationsmodelle" ein, auch in die Dokumente in der Quelle.
 ### Rehosting
 
 #### AWS
-[AWS Estimate](/KN07/Content/Estimate%20AWS.png)
+![AWS Estimate](/KN07/Content/Estimate%20AWS.png)
 
 #### AZURE
-[AZURE Estimate](/KN07/Content/Estimate%20Azure.png)
+![AZURE Estimate](/KN07/Content/Estimate%20Azure.png)
 
 #### Auswahl + Begründung
 AZURE ist zwar preislich attraktiv, jedoch haben wir bisher keine Erfahrungen damit gesammelt, im Gegensatz zu AWS. Wenn wir uns jedoch später mit AZURE vertraut machen und es testen, könnten wir einen Wechsel in Betracht ziehen. Aus diesem Grund wäre es besser, AWS zu wählen.
@@ -23,7 +23,7 @@ AZURE ist zwar preislich attraktiv, jedoch haben wir bisher keine Erfahrungen da
 ### Replatforming
 
 #### HEROKU
-[HEROKU Estimate](/KN07/Content/Estimate%20Heroku.png)
+![HEROKU Estimate](/KN07/Content/Estimate%20Heroku.png)
 
 #### Auswahl + Begründung
 Heroku ist zwar kostenintensiver als AWS oder AZURE, bietet jedoch umfangreichere Supportmöglichkeiten. Bei der Modifizierung ist man allerdings eingeschränkter. Wenn man die Infrastrukturkosten minimieren möchte, ist Heroku eine gute Wahl.
@@ -31,10 +31,10 @@ Heroku ist zwar kostenintensiver als AWS oder AZURE, bietet jedoch umfangreicher
 ### Repurchasing
 
 #### ZOHO CRM
-[ZOHO CRM Estimate](/KN07/Content/Estimate%20ZOHO.png)
+![ZOHO CRM Estimate](/KN07/Content/Estimate%20ZOHO.png)
 
 #### SALESFORCE
-[SALESFORCE Estimate](/KN07/Content/Estimate%20SalesFroce.png)
+![SALESFORCE Estimate](/KN07/Content/Estimate%20SalesFroce.png)
 
 #### Auswahl + Begründung
 ZOHO CRM Enterprice 40 CHF
