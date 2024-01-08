@@ -55,5 +55,7 @@ Die Angebote unterscheiden sich aufgrund verschiedener Faktoren. Bei SAAS ist es
 ### Welches ist das billigste?
 IAAS ist preislich am günstigsten, da man nur die Infrastruktur erhält und alles selbst konfigurieren muss.
 
+IaaS ist am günstigsten, wenn man den Preis des Services betrachtet. Allerdings müssen auch die Mitarbeiter bezahlt werden, die alles konfigurieren müssen. Es kann daher günstiger sein, PaaS oder SaaS zu wählen.
+
 ### Wieso ist eines davon viel teurer? Ist es aber wirklich teurer?
 Betrachtet man SAAS, fällt auf, dass der Preis mit steigender Anzahl an Nutzern ansteigt. Wenn jedoch nur eine Person SAAS nutzt, ist es sehr günstig.  SAAS ist eine fertige und einsatzbereite Lösung, die nur noch geringfügig angepasst werden muss. Außerdem bietet es umfangreichen Support, der sich auch preislich lohnt.
