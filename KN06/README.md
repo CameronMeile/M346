@@ -45,6 +45,8 @@ Nachdem die Änderungen angewendet wurden, können Sie die Instanz wieder starte
 
 ![](/KN06/Content/Task%20C/Loadbalancer.png)
 
+### Anleitung
+
 Um die Umgebung entsprechend einzurichten, folgen Sie bitte den nachstehenden Schritten:
 
 1. Erstellen Sie einen Load Balancer: Gehen Sie zu Ihrem Cloud-Anbieter und erstellen Sie einen Load Balancer. Stellen Sie sicher, dass der Load Balancer für HTTP/TCP-Anfragen konfiguriert ist und den gewünschten Port (normalerweise Port 80 für HTTP) verwendet.
@@ -56,5 +58,14 @@ Um die Umgebung entsprechend einzurichten, folgen Sie bitte den nachstehenden Sc
 7. Nachdem Sie den Load Balancer, die Instanzen, die statischen IPs, die Sicherheitsgruppen und den DNS konfiguriert haben, können Sie die Load-Balancer-URL (z. B. http://app.tbz-m346.ch) aufrufen und überprüfen, ob Swagger und der Endpunkt ordnungsgemäß funktionieren.
 
 Bitte beachten Sie, dass die genauen Schritte und die Konfiguration je nach Ihrem Cloud-Anbieter und der verwendeten Technologie variieren können.
+
+### Auskunft
+
+1. Load Balancer: Ein Load Balancer verteilt den Datenverkehr auf mehrere Instanzen, um die Last zu verteilen und die Verfügbarkeit zu verbessern.
+2. Target Group: Eine Target Group enthält die Instanzen, auf die der Load Balancer den Datenverkehr verteilt.
+3. Health Check: Ein Health Check überprüft regelmäßig den Status der Instanzen, um sicherzustellen, dass sie ordnungsgemäß funktionieren und den Datenverkehr verarbeiten können.
+4. IPs: IPs (Internet Protocol Addresses) sind eindeutige Identifikatoren für Geräte und Instanzen in einem Netzwerk.
+5. Sicherheitsgruppen: Sicherheitsgruppen dienen der Kontrolle des Netzwerkzugriffs und ermöglichen die Definition von Regeln für den Datenverkehr zu und von Instanzen.
+6. Listener: Ein Listener ist eine Komponente des Load Balancers, die den eingehenden Datenverkehr auf einen bestimmten Port und Protokolltyp hört und ihn an die entsprechende Target Group weiterleitet.
 
 ## TASK D - Auto Scaling
