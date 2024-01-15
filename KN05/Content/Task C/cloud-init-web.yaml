@@ -35,7 +35,7 @@ write_files:
   - path: /var/www/html/db.php
     content: |
       <?php
-        $servername = "172.31.92.4";
+        $servername = "172.31.16.10";
         $username = "admin";
         $password = "password";
         $dbname = "mysql";
