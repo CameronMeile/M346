@@ -23,6 +23,7 @@ erstellt. Wir wollen nun die Kontrolle ausüben.
 [Conf web.yaml](/KN05/Content/Task%20C/cloud-init-web.yaml)
 
 ![](/KN05/Content/Task%20C/DBSubnet.png)
+![](/KN05/Content/Task%20C/WEBSubnet.png)
 ![](/KN05/Content/Task%20C/ElasticIps.png)
 ![](/KN05/Content/Task%20C/Inboundrules%20DB.png)
 
@@ -32,4 +33,3 @@ erstellt. Wir wollen nun die Kontrolle ausüben.
 
 ![](/KN05/Content/Task%20C/SicherheitDB.png)
 ![](/KN05/Content/Task%20C/SicherheitWEB.png)
-![](/KN05/Content/Task%20C/WEBSubnet.png)
