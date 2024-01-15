@@ -17,3 +17,44 @@ Ein Reverse Proxy ist ein Server, der als Vermittler zwischen einem Client und B
 ![](/KN06/Content/Task%20A/ProceedIP.png)
 ![](/KN06/Content/Task%20A/Swagger.png)
 
+## TASK B - Vertikale Skalierung
+
+![](/KN06/Content/Task%20B/t2micro%20vorher.png)
+![](/KN06/Content/Task%20B/t2Meidum.png)
+
+### Erklärungen
+Um das Laufwerk auf 20 GB zu erweitern, können Sie folgende Schritte befolgen, ohne die Instanz stoppen zu müssen:
+
+1. Gehen Sie zu den Volumes-Einstellungen.
+2. Wählen Sie das gewünschte Volume aus.
+3. Klicken Sie auf "Volume ändern".
+4. Erhöhen Sie den Speicherplatz auf 20 GB.
+5. Bestätigen Sie die Änderungen.
+
+Bitte beachten Sie, dass für die Anpassung des Instanz-Typs ein Neustart der Instanz erforderlich ist. Führen Sie die folgenden Schritte aus:
+
+1. Stoppen Sie die Instanz.
+2. Gehen Sie zu den Instanz-Einstellungen.
+3. Wählen Sie "Instanz-Typ ändern".
+4. Wählen Sie den gewünschten neuen Instanz-Typ aus.
+5. Wenden Sie die Änderungen an.
+
+Nachdem die Änderungen angewendet wurden, können Sie die Instanz wieder starten und das Laufwerk sollte die gewünschte Größe haben.
+
+## TASK C - Horizontale Skalierung
+
+![](/KN06/Content/Task%20C/Loadbalancer.png)
+
+Um die Umgebung entsprechend einzurichten, folgen Sie bitte den nachstehenden Schritten:
+
+1. Erstellen Sie einen Load Balancer: Gehen Sie zu Ihrem Cloud-Anbieter und erstellen Sie einen Load Balancer. Stellen Sie sicher, dass der Load Balancer für HTTP/TCP-Anfragen konfiguriert ist und den gewünschten Port (normalerweise Port 80 für HTTP) verwendet.
+2. Erstellen Sie zwei Instanzen des Web Servers: Erstellen Sie zwei Instanzen Ihrer Web Server (z. B. virtuelle Maschinen) und stellen Sie sicher, dass sie den erforderlichen Web Server und die Anwendungen enthalten.
+3. Konfigurieren Sie den Load Balancer: Fügen Sie die beiden Web Server-Instanzen dem Load Balancer hinzu. Stellen Sie sicher, dass die Lastverteilungsmethode (z. B. Round Robin) entsprechend Ihren Anforderungen eingestellt ist.
+4. Konfigurieren Sie statische IPs (optional): Wenn Sie statische IPs für Ihre Instanzen verwenden möchten, weisen Sie ihnen statische IP-Adressen zu. Dadurch wird sichergestellt, dass die IP-Adressen der Instanzen beim Neustart nicht geändert werden.
+5. Konfigurieren Sie Sicherheitsgruppen: Erstellen Sie eine Sicherheitsgruppe für den Load Balancer, in der die erforderlichen eingehenden Regeln für den Zugriff auf den Web Server konfiguriert sind. Stellen Sie sicher, dass der Zugriff auf Port 80 (HTTP) oder den von Ihnen verwendeten Port erlaubt ist.
+6. Konfigurieren Sie den DNS: Gehen Sie zu Ihrem Domain-Registrar (z. B. GoDaddy, Namecheap) und konfigurieren Sie einen DNS-Eintrag. Erstellen Sie einen CNAME-Eintrag für die gewünschte Subdomain (z. B. app.tbz-m346.ch), der auf den Hostnamen des Load Balancers verweist.
+7. Nachdem Sie den Load Balancer, die Instanzen, die statischen IPs, die Sicherheitsgruppen und den DNS konfiguriert haben, können Sie die Load-Balancer-URL (z. B. http://app.tbz-m346.ch) aufrufen und überprüfen, ob Swagger und der Endpunkt ordnungsgemäß funktionieren.
+
+Bitte beachten Sie, dass die genauen Schritte und die Konfiguration je nach Ihrem Cloud-Anbieter und der verwendeten Technologie variieren können.
+
+## TASK D - Auto Scaling
