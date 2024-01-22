@@ -1,7 +1,7 @@
 # KN08 - FaaS und Backup
 
-In dieser Kompetenz werden Sie eine Migration einer lokalen Infrastruktur planen. Lesen Sie sich
-in die Theorie "Migrationsmodelle" ein, auch in die Dokumente in der Quelle.
+In dieser Kompetenz geht es darum, dass Sie mit Serverless Funktionen arbeiten (FaaS) und dabei
+auch praktische Wartungsarbeit umsetzen.
 
 [Aufgaben Stellung - KN08.pdf](/KN00/Content/KN08.pdf)
 
