@@ -69,3 +69,4 @@ Bitte beachten Sie, dass die genauen Schritte und die Konfiguration je nach Ihre
 6. Listener: Ein Listener ist eine Komponente des Load Balancers, die den eingehenden Datenverkehr auf einen bestimmten Port und Protokolltyp hört und ihn an die entsprechende Target Group weiterleitet.
 
 ## TASK D - Auto Scaling
+![Auto Scaling](/KN06/Content/Task%20D/AutoScailing%20Groupe.png)
