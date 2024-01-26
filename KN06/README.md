@@ -79,3 +79,4 @@ Bitte beachten Sie, dass die genauen Schritte und die Konfiguration je nach Ihre
 
 ## TASK D - Auto Scaling
 ![Auto Scaling](/KN06/Content/Task%20D/AutoScailing%20Groupe.png)
+![](/KN06/Content/Task%20D/Instances.png)
