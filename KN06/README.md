@@ -19,6 +19,10 @@ Ein Reverse Proxy ist ein Server, der als Vermittler zwischen einem Client und B
 
 ## TASK B - Vertikale Skalierung
 
+### Volumen
+![](/KN06/Content/Task%20B/Speciherplatzänderung.png)
+
+### Instance Typ
 ![](/KN06/Content/Task%20B/t2micro%20vorher.png)
 ![](/KN06/Content/Task%20B/t2Meidum.png)
 
@@ -44,6 +48,11 @@ Nachdem die Änderungen angewendet wurden, können Sie die Instanz wieder starte
 ## TASK C - Horizontale Skalierung
 
 ![](/KN06/Content/Task%20C/Loadbalancer.png)
+
+### Erläuterung:
+Mit Hilfe einer Route-Funktion (53) kann der DNS auf app.tbz-m346.ch gesetzt werden.
+In der aktuellen Umgebung ist es nicht unbedingt notwendig, statische IPs zu verwenden, da alle Anfragen an die IP-Adresse des Load Balancers gesendet und erst dann an die Instanzen weitergeleitet werden.
+Es ist jedoch wichtig, dass die Sicherheitsgruppe so konfiguriert ist, dass der Datenverkehr zwischen dem Load Balancer und den Instanzen nicht blockiert wird, aber gleichzeitig nicht jeder auf alle Daten zugreifen kann.
 
 ### Anleitung
 
