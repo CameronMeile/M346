@@ -61,3 +61,49 @@ aws ec2 allocate-address --domain vpc --output json
 aws ec2 stop-instances --instance-ids INSTANCE_ID_1 INSTANCE_ID_2
 
 ## TASK B - Terraform
+
+Konsolen-Befehle Terraform:
+```
+terraform init
+```
+```
+terraform fmt
+```
+```
+terraform validate
+```
+```
+terrform apply
+```
+
+[Terradorm.tf](/KN09/Content/Task%20B/Terradorm.tf)
+```
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+# Configure AWS
+provider "aws" {
+  region = "us-east-1"
+}
+resource "aws_instance" "example_instance" {
+  ami                    = "ami-0c7217cdde317cfec"
+  instance_type          = "t2.medium"
+  key_name               = "Cameron-2"
+  user_data              = file("C:/Users/came/cloud-init-db-1.yaml")
+  vpc_security_group_ids = ["sg-0b8500efb36934160"]
+  tags = {
+    Name = "Terraform - KN09"
+  }
+}
+```
+
+### TelNet 3306
+![](/KN09/Content/Task%20B/Telnet.png)
+
+### Erklärung
+Die Sache ist leichter zu verwalten und hat weniger Fehlerpotenzial. Dadurch wird die Effizienz gesteigert und Probleme werden minimiert.
