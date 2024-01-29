@@ -34,4 +34,30 @@ telnet 3.85.83.165 3306
 ```
 ![](/KN09/Content/Task%20A/Telnet.png)
 
+### Befehle konzeptionell hinschreiben
+# Subnetze erstellen
+aws ec2 create-subnet --vpc-id VPC_ID --cidr-block 10.0.3.0/24 --subnet-name Subnet-KN09
+ 
+# Private IPs auswählen
+PrivateIP1="10.0.1.10"
+PrivateIP2="10.0.2.10"
+ 
+# Security Groups erstellen
+aws ec2 create-security-group --group-name Web-SG --description "Security Group for Web" --vpc-id vpc-00fad79e0fa72f1dc
+aws ec2 create-security-group --group-name DB-SG --description "Security Group for DB" --vpc-id vpc-00fad79e0fa72f1dc
+ 
+# Regeln für DB-SG aktualisieren (nur Zugriff innerhalb des Subnetzes)
+aws ec2 authorize-security-group-ingress --group-id DB_SG_ID --protocol tcp --port 3306 --source-prefix-list YOUR_SUBNET_CIDR
+ 
+# Instanzen erstellen
+aws ec2 run-instances --image-id AMI_ID --subnet-id sg-0b8500efb36934160 --instance-type t2.micro --key-name KEY_PAIR --security-group-ids WEB_SG_ID --private-ip-address $PrivateIP1
+ 
+aws ec2 run-instances --image-id AMI_ID --subnet-id sg-0b8500efb36934160 --instance-type t2.micro --key-name KEY_PAIR --security-group-ids DB_SG_ID --private-ip-address $PrivateIP2
+ 
+# Elastische IPs erstellen
+aws ec2 allocate-address --domain vpc --output json
+ 
+# Instanzen stoppen
+aws ec2 stop-instances --instance-ids INSTANCE_ID_1 INSTANCE_ID_2
+
 ## TASK B - Terraform
