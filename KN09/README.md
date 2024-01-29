@@ -23,7 +23,7 @@ aws ec2 start-instances --instance-ids i-0933542de7a651e16 --region us-east-1
 
 ### Erstellen einer neuen Instanz
 ```
-aws ec2 run-instances --image-id ami-0c7217cdde317cfec --count 1 --instance-type t2.micro --key-name Cameron-2 --security-group-ids sg-0b8500efb36934160 --region us-east-1 --user-data file:///Users/came/cloud-init-web-dotnet.yaml
+aws ec2 run-instances --image-id ami-0c7217cdde317cfec --instance-type t2.micro --key-name Cameron-2 --security-group-ids sg-0b8500efb36934160 --region us-east-1 --user-data file://C:/Users/came/cloud-init-db-1.yaml
 ```
 ![](/KN09/Content/Task%20A/InstanceCreate.png)
 ![](/KN09/Content/Task%20A/Instance.png)
@@ -32,3 +32,6 @@ aws ec2 run-instances --image-id ami-0c7217cdde317cfec --count 1 --instance-type
 ```
 telnet 3.85.83.165 3306
 ```
+![](/KN09/Content/Task%20A/Telnet.png)
+
+## TASK B - Terraform
