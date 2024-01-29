@@ -8,3 +8,27 @@ Beachten Sie [die allgemeinen Informationen zu den Abgaben.](https://gitlab.com/
 ---
 
 ## TASK A - Automatisierung mit Command Line Interface
+
+### Stoppen einer Instanz (nicht terminieren)
+```
+aws ec2 stop-instances --instance-ids i-0933542de7a651e16 --region us-east-1
+```
+![](/KN09/Content/Task%20A/InstanceStopp.png)
+
+### Starten der gleichen Instanz
+```
+aws ec2 start-instances --instance-ids i-0933542de7a651e16 --region us-east-1
+```
+![](/KN09/Content/Task%20A/InstanceStart.png)
+
+### Erstellen einer neuen Instanz
+```
+aws ec2 run-instances --image-id ami-0c7217cdde317cfec --count 1 --instance-type t2.micro --key-name Cameron-2 --security-group-ids sg-0b8500efb36934160 --region us-east-1 --user-data file:///Users/came/cloud-init-web-dotnet.yaml
+```
+![](/KN09/Content/Task%20A/InstanceCreate.png)
+![](/KN09/Content/Task%20A/Instance.png)
+
+### Telnet CloudInit
+```
+telnet 3.85.83.165 3306
+```
